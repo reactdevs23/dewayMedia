@@ -1,0 +1,117 @@
+.choose-area {
+    padding: 120px 0;
+
+    .section-title {
+        .h2 {
+            font-weight: 400;
+            font-size: 93px;
+            line-height: 1;
+            color: #CD142D;
+
+        }
+
+        .h6 {
+            font-family: 'Graphik';
+            font-weight: 700;
+            font-size: 18px;
+            color: #000000;
+            padding-top: 15px;
+        }
+    }
+}
+
+.choose-slid {
+    .slick-slider {
+        // margin:0 -15px;
+    }
+
+    .chose-ss {
+        display: grid;
+        align-items: center;
+        min-height: 450px;
+        background: #F5F9FC;
+        padding: 20px;
+        border: 1px solid rgba(112, 112, 112, 0.36);
+        margin-bottom: 60px;
+
+    }
+
+    .chose-item {
+        .h3 {
+            margin: 30px 0 20px;
+        }
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+
+    .slick-slide {
+        padding-top: 60px;
+    }
+
+    .slick-current {
+
+        // margin-top: -60px;
+        // filter: drop-shadow(50px 50px 99px rgba(0, 0, 0, 0.161));
+        .chose-ss {
+            background-color: white;
+            border-left: 0;
+            border-right: 0;
+            filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.161));
+            @media (max-width: 991.98px){
+                border: 1px solid rgba(112, 112, 112, 0.36);
+            }
+        }
+    }
+
+    .slick-dots li button:before {
+        content: '';
+        border: 2px solid #BFBABA;
+        border-radius: 100px;
+        width: 17px;
+        height: 17px;
+        opacity: 1;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        background: #FBD4CC;
+        border: 2px solid #FBD4CC;
+        width: 43px;
+    }
+
+    .slick-dots li.slick-active {
+        width: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .choose-slid .slick-current {
+        margin-top: 0;
+    }
+
+    .choose-slid .slick-slide {
+        padding-top: 0px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .choose-slid {
+        padding-top: 40px;
+    }
+
+    .choose-area .section-title .h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .choose-area {
+        padding: 80px 0;
+    }
+}

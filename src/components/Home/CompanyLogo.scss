@@ -1,0 +1,21 @@
+.CompanyLogo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 0;
+    @media (max-width: 991.98px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    img{
+        width: auto;
+        max-height: 70px;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width: 991.98px){
+            max-height: 38px;
+        }
+    }
+}

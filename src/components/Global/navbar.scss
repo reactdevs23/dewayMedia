@@ -1,0 +1,112 @@
+.navBar-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    padding: 20px 0;
+    transition: all .3s linear;
+
+    .navbar-toggler {
+        box-shadow: none !important;
+    }
+
+    .nav-btn {
+        font-size: 20px;
+        color: #FF5946; 
+        font-weight: 400;
+        min-width: 180px;
+        height: 45px;
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; 
+        gap: 15px;
+        position: relative; 
+        z-index: 1;
+        overflow: hidden;
+        transition: all .3s linear;
+        &:after {
+            position: absolute;
+            content: '';
+            left: -100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2B143A;
+            z-index: -1;
+            transition: all .3s linear;
+        }
+        svg{
+            transition: all .3s linear;
+        }
+        &:hover{
+            color: white;
+            &:after { 
+                left: 0;
+            }
+            svg{
+                transform: translateX(10px);
+            }
+        }
+    }
+
+    .btn-bc {
+        background: #F56773;
+        color: white;
+    }
+
+    .nav-link {
+        color: #000;
+        margin: 0 7px;
+        font-size: 21px;
+        cursor: pointer;
+    } 
+    .navbar-brand{
+        cursor: pointer;
+    }
+    
+}
+
+.navScroll {
+    background-color: #FFFFFF;
+    padding: 5px 0;
+    /* box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.12); */
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+@media (max-width: 1199.98px) {
+    .navBar-top .nav-link {
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navBar-top {
+        padding: 10px 0;
+
+        .nav-item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .offcanvas-header {
+            padding-bottom: 0;
+        }
+
+        .navBtns {
+            margin-top: 25px;
+        }
+
+        .nav-link {
+            margin: 5px;
+        }
+    }
+
+    .navbar-brand{
+        img{
+            height: 50px;
+        }
+    }
+
+}
