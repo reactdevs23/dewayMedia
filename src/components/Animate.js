@@ -20,7 +20,7 @@ const MyThreeComponent = () => {
         1,
         1000
       );
-      camera.position.set(0, 0, 15);
+      camera.position.set(0, 0, 14);
 
       renderer = new THREE.WebGLRenderer({ alpha: true }); // Use alpha for transparency
       renderer.setSize(initialWidth, initialHeight);
